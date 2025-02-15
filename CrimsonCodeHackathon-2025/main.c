@@ -2,9 +2,11 @@
 * comment block
 */
 
+#include "map.h"
+
 int main()
 {
-	// commit test
+	mapInit();
 
 	return 0;
 }
