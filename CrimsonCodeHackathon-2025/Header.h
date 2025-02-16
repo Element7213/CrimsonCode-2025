@@ -40,7 +40,7 @@ void history();
 void history_logo();
 void trophy();
 void game_over();
-void maze();
+
 
 
 
