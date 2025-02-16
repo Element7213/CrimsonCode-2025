@@ -1,3 +1,0 @@
-﻿  main.c
-C:\Users\lorel\OneDrive\Documentos\Github\CrimsonCode-2025\CrimsonCodeHackathon-2025\main.c(16,8): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
-  CrimsonCodeHackathon-2025.vcxproj -> C:\Users\lorel\OneDrive\Documentos\Github\CrimsonCode-2025\CrimsonCodeHackathon-2025\x64\Debug\CrimsonCodeHackathon-2025.exe
