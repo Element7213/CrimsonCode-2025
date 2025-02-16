@@ -128,10 +128,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="hacathon.c" />
+    <ClCompile Include="images.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="map.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Header.h" />
     <ClInclude Include="map.h" />
   </ItemGroup>
   <ItemGroup>

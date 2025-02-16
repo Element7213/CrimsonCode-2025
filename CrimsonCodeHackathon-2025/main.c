@@ -8,13 +8,14 @@
 
 int main()
 {
-	char* mapArr[ROWS][COLS] = { {'\0'} }; // initializes as empty 
-	// size index for 3 questions for 5 rooms, with buffer spaces
+	char mapArr[ROWS][COLS] = { {'\0'} }; // initializes as empty 
+										// size index for 3 questions for 5 rooms, with buffer spaces
 	mapInit(mapArr);
 	//mapArr[0][0] = "*****************************";
 	//mapArr[0][0] = as;
-//>>>>>>> map 
-	mapPrint(mapArr);
+	
+	//mapPrint(mapArr);
+	maze(mapArr); 
 
 
 	pic_security();
@@ -30,7 +31,6 @@ int main()
 	history_logo();
 	trophy();
 	game_over();
-	maze();
 
 
 	return 0;
