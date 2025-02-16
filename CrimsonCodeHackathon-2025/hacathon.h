@@ -9,6 +9,8 @@
 #define RESET_COLOR "\033[0m"
 #define BLUE "\033[0;34m"
 #define GREEN "\033[0;32m"
+#pragma endregion
+
 int print_menu(void);
 
 
