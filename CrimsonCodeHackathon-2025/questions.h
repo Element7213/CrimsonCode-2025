@@ -19,12 +19,12 @@
 
 //int random_question(void);
 
-void history_questions(int freq);
+void history_questions(int freq[]);
 
 void science_questions(void);
 
 void art_questions(void);
 
-void countdown_timer(void);
+//void countdown_timer(void);
 
 #endif
