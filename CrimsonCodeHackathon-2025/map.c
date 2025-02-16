@@ -1,11 +1,18 @@
 #include "map.h"
 
-void mapInit()
+void mapInit(char mapArr[][COLS])
 {
-	// 2D array to be used as linear map movement
-	//char mapArr[ROWS][COLS] = {'\0'}; // initializes as empty, TO BE IN MAIN???
-								// size index for 3 questions for 5 rooms, with buffer spaces
+	for (int row = 0; row < ROWS; row++)
+	{
+		for (int col = 0; col < COLS; col++)
+		{
+			mapArr[row][col] = " ";
+		}
+	}
+}
 
+void mapPrint(char mapArr[][COLS])
+{
 	// display map
 	for (int row = 0; row < ROWS; row++) {
 		// print horizontal walls
@@ -20,7 +27,7 @@ void mapInit()
 			//printf("|****"); 
 		}
 		// print walls except last one
-		if (row < ROWS-1)
+		if (row < ROWS - 1)
 			printf("|\n");
 		else
 			printf("\n");
