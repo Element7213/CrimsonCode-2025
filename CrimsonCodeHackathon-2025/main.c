@@ -7,7 +7,7 @@
 
 int main()
 {
-	print_menu(); 
+	print_menu();
 
 	mapInit();
 
