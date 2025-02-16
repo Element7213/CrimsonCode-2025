@@ -19,7 +19,7 @@
 
 //int random_question(void);
 
-void history_questions(void);
+void history_questions(int freq);
 
 void science_questions(void);
 
