@@ -1,4 +1,5 @@
 #include "map.h"
+#include "Header.h" 
 
 void mapInit(char mapArr[][COLS])
 {
@@ -8,7 +9,7 @@ void mapInit(char mapArr[][COLS])
 		for (int col = 0; col < COLS; col++)
 		{
 			//mapArr[row][col] = "*****************************";
-			mapArr[row][col] = s; 
+			mapArr[row][col] = ' ';
 			//mapArr[row][col] = '254','\0';
 		}
 	}
@@ -136,29 +137,60 @@ void mapInit(char mapArr[][COLS])
 
 void maze(char mapArr[][COLS]) {
 
-	printf("==========================================================================================================\n"
+	printf(PURPLE"==========================================================================================================\n"
 		"|========================================================================================================|\n"
-		"|                         |                        |                           |           /             |\n"
-		"|           %c%c%c                                                                                          |\n"
-		"|                         |                        |                           |           /             |\n"
+		"|                "RED"         |                        |                           |           /     "PURPLE"        |\n"
+		"|        "RESET_COLOR"  %c%c%c                       %c%c%c                      %c%c%c                    "PURPLE"     %c%c%c            |\n"
+		"|                "RED"         |                        |                           |           /     "PURPLE"        |\n"
 		"|===============================================================================-------           -------|\n"
-		"|                         |          /             |                           |                         |\n"
-		"|                                    /                                                                   |\n"
-		"|                         |          /             |                           |                         |\n"
-		"|                         ===============================================================================|\n"
-		"|                         |          /             |                           |           /             |\n"
-		"|                                    /                                                     /             |\n"
-		"|                         |          /             |                           |           /             |\n"
-		"|===============================================================================                         |\n"
-		"|           /             |          /             |                           |                         |\n"
-		"|           /                        /                                                                   |\n"
-		"|           /             |          /             |                           |                         |\n"
-		"|                         ===============================================================================|\n"
-		"|           /             |                        |             /             |                         |\n"
-		"|           /                                                    /                                       |\n"
-		"|           /             |                        |             /             |                         |\n"
-		"================================================================================                         |\n", mapArr[0][0], mapArr[0][0], mapArr[0][0]);
+		"|                "RED"         |                        |                           |           /     "PURPLE"        |\n"
+		"|        "RESET_COLOR"  %c%c%c                       %c%c%c                      %c%c%c                    "PURPLE"     %c%c%c            |\n"
+		"|                "RED"         |                        |                           |           /     "PURPLE"        |\n"
+		"|--------         --------===============================================================================|\n"
+		"|                "RED"         |                        |                           |           /     "PURPLE"        |\n"
+		"|        "RESET_COLOR"  %c%c%c                       %c%c%c                      %c%c%c                    "PURPLE"     %c%c%c            |\n"
+		"|                "RED"         |                        |                           |           /     "PURPLE"        |\n"
+		"|===============================================================================-------           -------|\n"
+		"|                "RED"         |                        |                           |           /     "PURPLE"        |\n"
+		"|        "RESET_COLOR"  %c%c%c                       %c%c%c                      %c%c%c                    "PURPLE"     %c%c%c            |\n"
+		"|                "RED"         |                        |                           |           /     "PURPLE"        |\n"
+		"|-------           -------===============================================================================|\n"
+		"|                "RED"         |                        |                           |           /     "PURPLE"        |\n"
+		"|        "RESET_COLOR"  %c%c%c                       %c%c%c                      %c%c%c                    "PURPLE"     %c%c%c            |\n"
+		"|                "RED"         |                        |                           |           /     "PURPLE"        |\n"
+		"================================================================================--------        ---------|\n" RESET_COLOR, 
 
+		//first row
+		mapArr[0][0], mapArr[0][0], mapArr[0][0], mapArr[0][1], mapArr[0][1], mapArr[0][1], mapArr[0][2], mapArr[0][2], mapArr[0][2], mapArr[0][3], mapArr[0][3], mapArr[0][3], 
+		/*mapArr[0][0], mapArr[0][0], mapArr[0][0], mapArr[0][1], mapArr[0][1], mapArr[0][1], mapArr[0][2], mapArr[0][2], mapArr[0][2], mapArr[0][3], mapArr[0][3], mapArr[0][3],
+		mapArr[0][0], mapArr[0][0], mapArr[0][0], mapArr[0][1], mapArr[0][1], mapArr[0][1], mapArr[0][2], mapArr[0][2], mapArr[0][2], mapArr[0][3], mapArr[0][3], mapArr[0][3],
+		mapArr[0][0], mapArr[0][0], mapArr[0][0], mapArr[0][1], mapArr[0][1], mapArr[0][1], mapArr[0][2], mapArr[0][2], mapArr[0][2], mapArr[0][3], mapArr[0][3], mapArr[0][3], mapArr[0][4], mapArr[0][4], mapArr[0][4],*/
+		//second row
+		mapArr[1][0], mapArr[1][0], mapArr[1][0], mapArr[1][1], mapArr[1][1], mapArr[1][1], mapArr[1][2], mapArr[1][2], mapArr[1][2], mapArr[1][3], mapArr[1][3], mapArr[1][3],
+		/*mapArr[1][0], mapArr[1][0], mapArr[1][0], mapArr[1][1], mapArr[1][1], mapArr[1][1], mapArr[1][2], mapArr[1][2], mapArr[1][2], mapArr[1][3], mapArr[1][3], mapArr[1][3],
+		mapArr[1][0], mapArr[1][0], mapArr[1][0], mapArr[1][1], mapArr[1][1], mapArr[1][1], mapArr[1][2], mapArr[1][2], mapArr[1][2], mapArr[1][3], mapArr[1][3], mapArr[1][3],
+		mapArr[1][0], mapArr[1][0], mapArr[1][0], mapArr[1][1], mapArr[1][1], mapArr[1][1], mapArr[1][2], mapArr[1][2], mapArr[1][2], mapArr[1][3], mapArr[1][3], mapArr[1][3], mapArr[1][4], mapArr[1][4], mapArr[1][4],*/
+		//third row
+		mapArr[2][0], mapArr[2][0], mapArr[2][0], mapArr[2][1], mapArr[2][1], mapArr[2][1], mapArr[2][2], mapArr[2][2], mapArr[2][2], mapArr[2][3], mapArr[2][3], mapArr[2][3],
+		/*mapArr[2][0], mapArr[2][0], mapArr[2][0], mapArr[2][1], mapArr[2][1], mapArr[2][1], mapArr[2][2], mapArr[2][2], mapArr[2][2], mapArr[2][3], mapArr[2][3], mapArr[2][3],
+		mapArr[2][0], mapArr[2][0], mapArr[2][0], mapArr[2][1], mapArr[2][1], mapArr[2][1], mapArr[2][2], mapArr[2][2], mapArr[2][2], mapArr[2][3], mapArr[2][3], mapArr[2][3],
+		mapArr[2][0], mapArr[2][0], mapArr[2][0], mapArr[2][1], mapArr[2][1], mapArr[2][1], mapArr[2][2], mapArr[2][2], mapArr[2][2], mapArr[2][3], mapArr[2][3], mapArr[2][3], mapArr[2][4], mapArr[2][4], mapArr[2][4],*/
+		//four row
+		mapArr[3][0], mapArr[3][0], mapArr[3][0], mapArr[3][1], mapArr[3][1], mapArr[3][1], mapArr[3][2], mapArr[3][2], mapArr[3][2], mapArr[3][3], mapArr[3][3], mapArr[3][3],
+		/*mapArr[3][0], mapArr[3][0], mapArr[3][0], mapArr[3][1], mapArr[3][1], mapArr[3][1], mapArr[3][2], mapArr[3][2], mapArr[3][2], mapArr[3][3], mapArr[3][3], mapArr[3][3],
+		mapArr[3][0], mapArr[3][0], mapArr[3][0], mapArr[3][1], mapArr[3][1], mapArr[3][1], mapArr[3][2], mapArr[3][2], mapArr[3][2], mapArr[3][3], mapArr[3][3], mapArr[3][3],
+		mapArr[3][0], mapArr[3][0], mapArr[3][0], mapArr[3][1], mapArr[3][1], mapArr[3][1], mapArr[3][2], mapArr[3][2], mapArr[3][2], mapArr[3][3], mapArr[3][3], mapArr[3][3], mapArr[3][4], mapArr[3][4], mapArr[3][4],*/
+		//fifth row
+		mapArr[4][0], mapArr[4][0], mapArr[4][0], mapArr[4][1], mapArr[4][1], mapArr[4][1], mapArr[4][2], mapArr[4][2], mapArr[4][2], mapArr[4][3], mapArr[4][3], mapArr[4][3]//,
+		/*mapArr[4][0], mapArr[4][0], mapArr[4][0], mapArr[4][1], mapArr[4][1], mapArr[4][1], mapArr[4][2], mapArr[4][2], mapArr[4][2], mapArr[4][3], mapArr[4][3], mapArr[4][3],
+		mapArr[4][0], mapArr[4][0], mapArr[4][0], mapArr[4][1], mapArr[4][1], mapArr[4][1], mapArr[4][2], mapArr[4][2], mapArr[4][2], mapArr[4][3], mapArr[4][3], mapArr[4][3],
+		mapArr[4][0], mapArr[4][0], mapArr[4][0], mapArr[4][1], mapArr[4][1], mapArr[4][1], mapArr[4][2], mapArr[4][2], mapArr[4][2], mapArr[4][3], mapArr[4][3], mapArr[4][3], mapArr[4][4], mapArr[4][4], mapArr[4][4]*/
+	);
+
+		
+
+
+	
 
 
 

@@ -12,7 +12,7 @@ int main()
 										// size index for 3 questions for 5 rooms, with buffer spaces
 	mapInit(mapArr);
 	//mapArr[0][0] = "*****************************";
-	//mapArr[0][0] = as;
+	mapArr[0][0] = 254;
 	
 	//mapPrint(mapArr);
 	maze(mapArr); 
