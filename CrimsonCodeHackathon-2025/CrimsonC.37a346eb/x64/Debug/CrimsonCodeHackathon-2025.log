@@ -1,15 +1,2 @@
 ﻿  main.c
-<<<<<<< Updated upstream
-  questions.c
-  Generating Code...
-C:\Users\lorel\OneDrive\Documentos\Github\CrimsonCode-2025\CrimsonCodeHackathon-2025\questions.c(7,8): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\lorel\OneDrive\Documentos\Github\CrimsonCode-2025\CrimsonCodeHackathon-2025\questions.c(30,9): warning C4047: 'initializing': 'char' differs in levels of indirection from 'void *'
-C:\Users\lorel\OneDrive\Documentos\Github\CrimsonCode-2025\CrimsonCodeHackathon-2025\questions.c(153,8): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\lorel\OneDrive\Documentos\Github\CrimsonCode-2025\CrimsonCodeHackathon-2025\questions.c(176,9): warning C4047: 'initializing': 'char' differs in levels of indirection from 'void *'
-C:\Users\lorel\OneDrive\Documentos\Github\CrimsonCode-2025\CrimsonCodeHackathon-2025\questions.c(299,8): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\lorel\OneDrive\Documentos\Github\CrimsonCode-2025\CrimsonCodeHackathon-2025\questions.c(322,9): warning C4047: 'initializing': 'char' differs in levels of indirection from 'void *'
-  LINK : C:\Users\lorel\OneDrive\Documentos\Github\CrimsonCode-2025\CrimsonCodeHackathon-2025\x64\Debug\CrimsonCodeHackathon-2025.exe not found or not built by the last incremental link; performing full link
-  CrimsonCodeHackathon-2025.vcxproj -> C:\Users\lorel\OneDrive\Documentos\Github\CrimsonCode-2025\CrimsonCodeHackathon-2025\x64\Debug\CrimsonCodeHackathon-2025.exe
-=======
   CrimsonCodeHackathon-2025.vcxproj -> C:\Users\kirst\OneDrive\Documents\GitHub\CrimsonCode-2025\CrimsonCodeHackathon-2025\x64\Debug\CrimsonCodeHackathon-2025.exe
->>>>>>> Stashed changes
