@@ -23,7 +23,15 @@ void mapPrint(char mapArr[][COLS])
 
 		// print vertical walls and room spaces
 		for (int col = 0; col < COLS; col++) {
-			printf("|    ");
+			//printf("|    ");
+			if (col == 0)
+			{
+				printf("|");
+			}
+			else 
+			{
+				//printf
+			}
 			//printf("|****"); 
 		}
 		// print walls except last one
