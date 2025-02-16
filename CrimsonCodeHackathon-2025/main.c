@@ -18,7 +18,7 @@ int main()
 	maze(mapArr); 
 
 
-	pic_security();
+	/*pic_security();
 	pic_rocket();
 	science_logo();
 	art_logo();
@@ -30,7 +30,7 @@ int main()
 	history();
 	history_logo();
 	trophy();
-	game_over();
+	game_over();*/
 
 
 	return 0;
