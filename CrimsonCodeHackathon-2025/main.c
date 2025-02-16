@@ -12,27 +12,42 @@ int main()
 //	
 //=======
 {	
+
+	srand(time(NULL));
 	/*int runner = 0;
 
     do {
         runner++;*/
-
+	int success = 0;
 	int freq[7];
+	int freq2[7];
+	int freq3[7];
 	int count = 7;
 
 	for (int i = 0; i < count; i++)
 	{
 		/*question[i] = i;*/
 		freq[i] = 0;
+		freq2[i] = 0;
+		freq3[i] = 0;
 	}
+	
 
-	history_questions(freq);
-	history_questions(freq);
-	history_questions(freq);
-	science_questions();
-	art_questions();
-	geo_questions();
-	myth_questions();
+	history_questions(freq, success);
+	history_questions(freq, success);
+	history_questions(freq, success);
+	science_questions(freq2, success);
+	science_questions(freq2, success);
+	science_questions(freq2, success);
+	art_questions(freq3, success);
+	art_questions(freq3, success);
+	art_questions(freq3, success);
+	
+
+	
+	
+	/*geo_questions(freq3);
+	myth_questions(freq3);*/
 		
         //geo_questions();     
 		

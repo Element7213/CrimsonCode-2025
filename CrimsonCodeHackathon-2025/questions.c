@@ -1,30 +1,10 @@
 #include "questions.h"
 
-//void countdown_timer(void)
-//{
-//	int seconds = 10;
-//
-//	for (int i = seconds; i >= 0; i--)
-//	{
-//		printf("\r"PURPLE" %d seconds "RESET, i);
-//		fflush(stdout);
-//
-//		Sleep(1000);
-//
-//		/*if (_kbhit()) {
-//			return;
-//		}*/
-//	}
-//
-//	printf(RED"\nTime's up!\n" RESET);
-//
-//	
-//}
 
-void history_questions(int freq[])
+
+void history_questions(int freq[], int success)
 {
-	srand(time(NULL));
-	/*int freq[7];*/ 
+	
 	int question[7];
 	int random = 0;
 	int index = 0;
@@ -33,17 +13,16 @@ void history_questions(int freq[])
 	for (int i = 0; i < count; i++)
 	{
 		question[i] = i;
-		/*freq[i] = 0;*/
+	
 	}
 
-	//int limit = 0;
-	/*while (limit < 2)
-	{*/
-		/*limit++;*/
-		/*while (count > 0) {*/
-		index = rand() % 7;
+	
+	while (freq[index] == 1)
+	{
+		index = rand() % 6;
+	}
 
-		if (freq[index] == 0) {
+		
 			random = question[index];
 			freq[index] = 1;
 			count--;
@@ -72,10 +51,12 @@ void history_questions(int freq[])
 				if (choice != 'd')
 				{
 					printf(RED "\nWrong answer! Be careful, the guard is getting closer!\n" RESET);
+					success = 0;
 				}
 				else
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
+					success = 1;
 				}
 
 				system("pause");
@@ -101,10 +82,12 @@ void history_questions(int freq[])
 				if (choice != 'a')
 				{
 					printf(RED "\nWrong answer! Be careful, the guard is getting closer!\n" RESET);
+					success = 0;
 				}
 				else
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
+					success = 1;
 				}
 
 				system("pause");
@@ -130,10 +113,12 @@ void history_questions(int freq[])
 				if (choice != 'b')
 				{
 					printf(RED "\nWrong answer! Be careful, the guard is getting closer!\n" RESET);
+					success = 0;
 				}
 				else
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
+					success = 1;
 				}
 
 				system("pause");
@@ -158,10 +143,12 @@ void history_questions(int freq[])
 				if (choice != 'a')
 				{
 					printf(RED "\nWrong answer! Be careful, the guard is getting closer!\n" RESET);
+					success = 0;
 				}
 				else
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
+					success = 1;
 				}
 
 				system("pause");
@@ -186,10 +173,12 @@ void history_questions(int freq[])
 				if (choice != 'c')
 				{
 					printf(RED "\nWrong answer! Be careful, the guard is getting closer!\n" RESET);
+					success = 0;
 				}
 				else
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
+					success = 1;
 				}
 
 				system("pause");
@@ -215,10 +204,12 @@ void history_questions(int freq[])
 				if (choice != 'b')
 				{
 					printf(RED "\nWrong answer! Be careful, the guard is getting closer!\n" RESET);
+					success = 0;
 				}
 				else
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
+					success = 1;
 				}
 
 				system("pause");
@@ -226,18 +217,14 @@ void history_questions(int freq[])
 
 				break;
 			}
-			/*	WaitForSingleObject(timer_thread, INFINITE);
-				CloseHandle(timer_thread);*/
-		/*}*/
-		/*}*/
-	}
+			
 	
 }
 
-void science_questions(void)
+void science_questions(int freq[], int success)
 {
-	srand(time(NULL));
-	int freq[7];
+	
+	
 	int question[7];
 	int random = 0;
 	int index = 0;
@@ -246,14 +233,17 @@ void science_questions(void)
 	for (int i = 0; i < count; i++)
 	{
 		question[i] = i;
-		freq[i] = 0;
+		
 	}
 
 
-	while (count > 0) {
-		index = rand() % 7;
+	
+	while (freq[index] == 1)
+	{
+		index = rand() % 6;
+	}
 
-		if (freq[index] == 0) {
+		
 			random = question[index];
 			freq[index] = 1;
 			count--;
@@ -274,10 +264,12 @@ void science_questions(void)
 				if (choice != 'b')
 				{
 					printf(RED "\nWrong answer! Be careful, the guard is getting closer!\n" RESET);
+					success = 0;
 				}
 				else
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
+					success = 1;
 				}
 
 				system("pause");
@@ -296,10 +288,12 @@ void science_questions(void)
 				if (choice != 'c')
 				{
 					printf(RED "\nWrong answer! Be careful, the guard is getting closer!\n" RESET);
+					success = 0;
 				}
 				else
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
+					success = 1;
 				}
 				system("pause");
 				system("cls");
@@ -317,10 +311,12 @@ void science_questions(void)
 				if (choice != 'b')
 				{
 					printf(RED "\nWrong answer! Be careful, the guard is getting closer!\n" RESET);
+					success = 0;
 				}
 				else
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
+					success = 1;
 				}
 				system("pause");
 				system("cls");
@@ -338,10 +334,12 @@ void science_questions(void)
 				if (choice != 'd')
 				{
 					printf(RED "\nWrong answer! Be careful, the guard is getting closer!\n" RESET);
+					success = 0;
 				}
 				else
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
+					success = 1;
 				}
 				system("pause");
 				system("cls");
@@ -359,10 +357,12 @@ void science_questions(void)
 				if (choice != 'c')
 				{
 					printf(RED "\nWrong answer! Be careful, the guard is getting closer!\n" RESET);
+					success = 0;
 				}
 				else
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
+					success = 1;
 				}
 				system("pause");
 				system("cls");
@@ -380,23 +380,24 @@ void science_questions(void)
 				if (choice != 'a')
 				{
 					printf(RED "\nWrong answer! Be careful, the guard is getting closer!\n" RESET);
+					success = 0;
 				}
 				else
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
+					success = 1;
 				}
 				system("pause");
 				system("cls");
 				break;
 			}
-		}
-	}
+		
 }
 
-void art_questions(void)
+void art_questions(int freq[], int success)
 {
-	srand(time(NULL));
-	int freq[7];
+	
+
 	int question[7];
 	int random = 0;
 	int index = 0;
@@ -405,14 +406,17 @@ void art_questions(void)
 	for (int i = 0; i < count; i++)
 	{
 		question[i] = i;
-		freq[i] = 0;
+		
 	}
 
 
-	while (count > 0) {
-		index = rand() % 7;
+	while (freq[index] == 1)
+	{
+		index = rand() % 6;
+	} 
+		
 
-		if (freq[index] == 0) {
+		
 			random = question[index];
 			freq[index] = 1;
 			count--;
@@ -433,10 +437,12 @@ void art_questions(void)
 				if (choice != 'b')
 				{
 					printf(RED "\nWrong answer! Be careful, the guard is getting closer!\n" RESET);
+					success = 0;
 				}
 				else
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
+					success = 1;
 				}
 				system("pause");
 				system("cls");
@@ -454,10 +460,12 @@ void art_questions(void)
 				if (choice != 'b')
 				{
 					printf(RED "\nWrong answer! Be careful, the guard is getting closer!\n" RESET);
+					success = 0;
 				}
 				else
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
+					success = 1;
 				}
 				system("pause");
 				system("cls");
@@ -475,10 +483,12 @@ void art_questions(void)
 				if (choice != 'a')
 				{
 					printf(RED "\nWrong answer! Be careful, the guard is getting closer!\n" RESET);
+					success = 0;
 				}
 				else
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
+					success = 1;
 				}
 				system("pause");
 				system("cls");
@@ -496,10 +506,12 @@ void art_questions(void)
 				if (choice != 'b')
 				{
 					printf(RED "\nWrong answer! Be careful, the guard is getting closer!\n" RESET);
+					success = 0;
 				}
 				else
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
+					success = 1;
 				}
 				system("pause");
 				system("cls");
@@ -517,10 +529,12 @@ void art_questions(void)
 				if (choice != 'c')
 				{
 					printf(RED "\nWrong answer! Be careful, the guard is getting closer!\n" RESET);
+					success = 0;
 				}
 				else
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
+					success = 1;
 				}
 				system("pause");
 				system("cls");
@@ -538,15 +552,16 @@ void art_questions(void)
 				if (choice != 'c')
 				{
 					printf(RED "\nWrong answer! Be careful, the guard is getting closer!\n" RESET);
+					success = 0;
 				}
 				else
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
+					success = 1;
 				}
 				system("pause");
 				system("cls");
 				break;
 			}
-		}
-	}
+		
 }
