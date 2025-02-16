@@ -3,9 +3,12 @@
 */
 
 #include "map.h"
+#include "hacathon.h"
 
 int main()
 {
+	print_menu();
+
 	mapInit();
 
 

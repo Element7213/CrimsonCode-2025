@@ -1,31 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\kirst\\OneDrive\\Documents\\GitHub\\CrimsonCode-2025\\CrimsonCodeHackathon-2025\\",
+  "WorkspaceRootPath": "C:\\Users\\rorik\\OneDrive\\Documents\\GitHub\\CrimsonCode-2025\\CrimsonCodeHackathon-2025\\",
   "Documents": [
-    {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{37A346EB-0DFA-454A-8883-6D007C1F33E4}|CrimsonCodeHackathon-2025.vcxproj|C:\\Users\\rorik\\OneDrive\\Documents\\GitHub\\CrimsonCode-2025\\CrimsonCodeHackathon-2025\\map.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{37A346EB-0DFA-454A-8883-6D007C1F33E4}|CrimsonCodeHackathon-2025.vcxproj|solutionrelative:map.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
     {
       "AbsoluteMoniker": "D:0:0:{37A346EB-0DFA-454A-8883-6D007C1F33E4}|CrimsonCodeHackathon-2025.vcxproj|C:\\Users\\rorik\\OneDrive\\Documents\\GitHub\\CrimsonCode-2025\\CrimsonCodeHackathon-2025\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{37A346EB-0DFA-454A-8883-6D007C1F33E4}|CrimsonCodeHackathon-2025.vcxproj|solutionrelative:main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37A346EB-0DFA-454A-8883-6D007C1F33E4}|CrimsonCodeHackathon-2025.vcxproj|C:\\Users\\rorik\\OneDrive\\Documents\\GitHub\\CrimsonCode-2025\\CrimsonCodeHackathon-2025\\map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{37A346EB-0DFA-454A-8883-6D007C1F33E4}|CrimsonCodeHackathon-2025.vcxproj|solutionrelative:map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-=======
-      "AbsoluteMoniker": "D:0:0:{37A346EB-0DFA-454A-8883-6D007C1F33E4}|CrimsonCodeHackathon-2025.vcxproj|C:\\Users\\kirst\\OneDrive\\Documents\\GitHub\\CrimsonCode-2025\\CrimsonCodeHackathon-2025\\hacathon.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{37A346EB-0DFA-454A-8883-6D007C1F33E4}|CrimsonCodeHackathon-2025.vcxproj|C:\\Users\\rorik\\OneDrive\\Documents\\GitHub\\CrimsonCode-2025\\CrimsonCodeHackathon-2025\\hacathon.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{37A346EB-0DFA-454A-8883-6D007C1F33E4}|CrimsonCodeHackathon-2025.vcxproj|solutionrelative:hacathon.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37A346EB-0DFA-454A-8883-6D007C1F33E4}|CrimsonCodeHackathon-2025.vcxproj|C:\\Users\\kirst\\OneDrive\\Documents\\GitHub\\CrimsonCode-2025\\CrimsonCodeHackathon-2025\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{37A346EB-0DFA-454A-8883-6D007C1F33E4}|CrimsonCodeHackathon-2025.vcxproj|solutionrelative:main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{37A346EB-0DFA-454A-8883-6D007C1F33E4}|CrimsonCodeHackathon-2025.vcxproj|C:\\Users\\rorik\\OneDrive\\Documents\\GitHub\\CrimsonCode-2025\\CrimsonCodeHackathon-2025\\map.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{37A346EB-0DFA-454A-8883-6D007C1F33E4}|CrimsonCodeHackathon-2025.vcxproj|solutionrelative:map.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37A346EB-0DFA-454A-8883-6D007C1F33E4}|CrimsonCodeHackathon-2025.vcxproj|C:\\Users\\kirst\\OneDrive\\Documents\\GitHub\\CrimsonCode-2025\\CrimsonCodeHackathon-2025\\hacathon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{37A346EB-0DFA-454A-8883-6D007C1F33E4}|CrimsonCodeHackathon-2025.vcxproj|solutionrelative:hacathon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
->>>>>>> origin/Menu
+      "AbsoluteMoniker": "D:0:0:{37A346EB-0DFA-454A-8883-6D007C1F33E4}|CrimsonCodeHackathon-2025.vcxproj|C:\\Users\\rorik\\OneDrive\\Documents\\GitHub\\CrimsonCode-2025\\CrimsonCodeHackathon-2025\\map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{37A346EB-0DFA-454A-8883-6D007C1F33E4}|CrimsonCodeHackathon-2025.vcxproj|solutionrelative:map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,69 +26,55 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-<<<<<<< HEAD
+              "DocumentIndex": 1,
+              "Title": "hacathon.c",
+              "DocumentMoniker": "C:\\Users\\rorik\\OneDrive\\Documents\\GitHub\\CrimsonCode-2025\\CrimsonCodeHackathon-2025\\hacathon.c",
+              "RelativeDocumentMoniker": "hacathon.c",
+              "ToolTip": "C:\\Users\\rorik\\OneDrive\\Documents\\GitHub\\CrimsonCode-2025\\CrimsonCodeHackathon-2025\\hacathon.c",
+              "RelativeToolTip": "hacathon.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-02-16T00:50:03.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "map.h",
               "DocumentMoniker": "C:\\Users\\rorik\\OneDrive\\Documents\\GitHub\\CrimsonCode-2025\\CrimsonCodeHackathon-2025\\map.h",
               "RelativeDocumentMoniker": "map.h",
               "ToolTip": "C:\\Users\\rorik\\OneDrive\\Documents\\GitHub\\CrimsonCode-2025\\CrimsonCodeHackathon-2025\\map.h",
               "RelativeToolTip": "map.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-15T22:11:43.211Z",
-=======
-              "Title": "hacathon.h",
-              "DocumentMoniker": "C:\\Users\\kirst\\OneDrive\\Documents\\GitHub\\CrimsonCode-2025\\CrimsonCodeHackathon-2025\\hacathon.h",
-              "RelativeDocumentMoniker": "hacathon.h",
-              "ToolTip": "C:\\Users\\kirst\\OneDrive\\Documents\\GitHub\\CrimsonCode-2025\\CrimsonCodeHackathon-2025\\hacathon.h",
-              "RelativeToolTip": "hacathon.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-15T23:08:16.861Z",
->>>>>>> origin/Menu
+              "WhenOpened": "2025-02-15T22:11:43.211Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "map.c",
+              "DocumentMoniker": "C:\\Users\\rorik\\OneDrive\\Documents\\GitHub\\CrimsonCode-2025\\CrimsonCodeHackathon-2025\\map.c",
+              "RelativeDocumentMoniker": "map.c",
+              "ToolTip": "C:\\Users\\rorik\\OneDrive\\Documents\\GitHub\\CrimsonCode-2025\\CrimsonCodeHackathon-2025\\map.c",
+              "RelativeToolTip": "map.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-02-15T22:11:34.309Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-<<<<<<< HEAD
-              "Title": "map.c",
-              "DocumentMoniker": "C:\\Users\\rorik\\OneDrive\\Documents\\GitHub\\CrimsonCode-2025\\CrimsonCodeHackathon-2025\\map.c",
-              "RelativeDocumentMoniker": "map.c",
-              "ToolTip": "C:\\Users\\rorik\\OneDrive\\Documents\\GitHub\\CrimsonCode-2025\\CrimsonCodeHackathon-2025\\map.c*",
-              "RelativeToolTip": "map.c*",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACQAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-02-15T22:11:34.309Z",
-=======
-              "Title": "hacathon.c",
-              "DocumentMoniker": "C:\\Users\\kirst\\OneDrive\\Documents\\GitHub\\CrimsonCode-2025\\CrimsonCodeHackathon-2025\\hacathon.c",
-              "RelativeDocumentMoniker": "hacathon.c",
-              "ToolTip": "C:\\Users\\kirst\\OneDrive\\Documents\\GitHub\\CrimsonCode-2025\\CrimsonCodeHackathon-2025\\hacathon.c*",
-              "RelativeToolTip": "hacathon.c*",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACgAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-02-15T23:08:04.513Z",
->>>>>>> origin/Menu
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "main.c",
-              "DocumentMoniker": "C:\\Users\\kirst\\OneDrive\\Documents\\GitHub\\CrimsonCode-2025\\CrimsonCodeHackathon-2025\\main.c",
+              "DocumentMoniker": "C:\\Users\\rorik\\OneDrive\\Documents\\GitHub\\CrimsonCode-2025\\CrimsonCodeHackathon-2025\\main.c",
               "RelativeDocumentMoniker": "main.c",
-              "ToolTip": "C:\\Users\\kirst\\OneDrive\\Documents\\GitHub\\CrimsonCode-2025\\CrimsonCodeHackathon-2025\\main.c",
+              "ToolTip": "C:\\Users\\rorik\\OneDrive\\Documents\\GitHub\\CrimsonCode-2025\\CrimsonCodeHackathon-2025\\main.c",
               "RelativeToolTip": "main.c",
-<<<<<<< HEAD
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
-=======
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
->>>>>>> origin/Menu
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-02-15T21:35:41.181Z",
               "EditorCaption": ""
