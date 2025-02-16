@@ -6,15 +6,15 @@
 
 int main()
 {
-	int runner = 0;
+	/*int runner = 0;
 	do {
-		runner++;
-		int random = random_question();
+		runner++;*/
+		/*int random = history_questions(void);*/
+		
+	history_questions();
 
-		printf("selected question index: %d\n", random);
-
-		history_questions(random);
-	} while (runner != 7);
+		/*history_questions(random);*/
+	/*} while (runner != 7);*/
 	
 
 	// commit test

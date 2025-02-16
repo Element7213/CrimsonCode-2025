@@ -12,9 +12,9 @@
 #define GREEN "\033[32m"
 #define RESET "\033[0m"
 
-int random_question(void);
+//int random_question(void);
 
-void history_questions(int random);
+void history_questions(void);
 
 
 
