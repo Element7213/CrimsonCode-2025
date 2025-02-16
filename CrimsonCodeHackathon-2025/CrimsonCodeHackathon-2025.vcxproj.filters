@@ -21,9 +21,15 @@
     <ClCompile Include="questions.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="projectquestions.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="questions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="projectquestions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
