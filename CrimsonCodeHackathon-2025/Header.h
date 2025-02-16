@@ -24,6 +24,9 @@
 
 
 #pragma region images
+
+
+
 void pic_security();
 void pic_rocket();
 void science_logo();
@@ -37,7 +40,7 @@ void history();
 void history_logo();
 void trophy();
 void game_over();
-
+void maze();
 
 
 

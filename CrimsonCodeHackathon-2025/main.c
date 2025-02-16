@@ -18,6 +18,7 @@ int main() {
    history_logo();
 	 trophy();
 	game_over();
+	 maze();
 
 
 
