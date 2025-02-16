@@ -1,11 +1,30 @@
 #include "questions.h"
 
+//void countdown_timer(void)
+//{
+//	int seconds = 10;
+//
+//	for (int i = seconds; i >= 0; i--)
+//	{
+//		printf("\r"PURPLE" %d seconds "RESET, i);
+//		fflush(stdout);
+//
+//		Sleep(1000);
+//
+//		/*if (_kbhit()) {
+//			return;
+//		}*/
+//	}
+//
+//	printf(RED"\nTime's up!\n" RESET);
+//
+//	
+//}
 
-
-void history_questions(void)
+void history_questions(int freq[])
 {
 	srand(time(NULL));
-	int freq[7]; 
+	/*int freq[7];*/ 
 	int question[7];
 	int random = 0;
 	int index = 0;
@@ -14,30 +33,41 @@ void history_questions(void)
 	for (int i = 0; i < count; i++)
 	{
 		question[i] = i;
-		freq[i] = 0;
+		/*freq[i] = 0;*/
 	}
 
-	
-	while (count > 0) {
-		index = rand() % 7; 
+	//int limit = 0;
+	/*while (limit < 2)
+	{*/
+		/*limit++;*/
+		/*while (count > 0) {*/
+		index = rand() % 7;
 
 		if (freq[index] == 0) {
 			random = question[index];
 			freq[index] = 1;
 			count--;
 
-			
+
 			char choice = NULL;
+
+
+
 			switch (random)
 			{
 			case 0:
+
 				printf("\nWhen Columbus sailed from Spain, what did he expect to find?\n");
 				printf("a. Mongolia \nb. New England \nc. America \nd. India \n");
+
+
 				do
 				{
 					printf("Please input the letter corresponding to your answer: \n");
 					scanf(" %c", &choice);
+
 				} while (choice != 'a' && choice != 'b' && choice != 'c' && choice != 'd');
+
 
 				if (choice != 'd')
 				{
@@ -47,16 +77,26 @@ void history_questions(void)
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 				}
+
+				system("pause");
+				system("cls");
+
 				break;
 
 			case 1:
+
 				printf("\nWhen was the Declaration of Independence adopted?\n");
 				printf("a. July 4, 1776 \nb. July 1, 1776 \nc. July 4, 1787 \nd. January 20, 1801 \n");
+
+
+
 				do
 				{
 					printf("Please input the letter corresponding to your answer: \n");
 					scanf(" %c", &choice);
+
 				} while (choice != 'a' && choice != 'b' && choice != 'c' && choice != 'd');
+
 
 				if (choice != 'a')
 				{
@@ -66,16 +106,26 @@ void history_questions(void)
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 				}
+
+				system("pause");
+				system("cls");
+
 				break;
 
 			case 2:
+
 				printf("\nWhat was the longest war in US history?\n");
 				printf("a. Civil War \nb. Afghan War \nc. Korean War \nd. WW2 \n");
+
+
+
 				do
 				{
 					printf("Please input the letter corresponding to your answer: \n");
 					scanf(" %c", &choice);
+
 				} while (choice != 'a' && choice != 'b' && choice != 'c' && choice != 'd');
+
 
 				if (choice != 'b')
 				{
@@ -85,16 +135,25 @@ void history_questions(void)
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 				}
+
+				system("pause");
+				system("cls");
 				break;
 
 			case 3:
+
 				printf("\nWhat was the first successful US colony?\n");
 				printf("a. Virginia \nb. Delaware \nc. Pennsylvania \nd. Massachusetts \n");
+
+
+
 				do
 				{
 					printf("Please input the letter corresponding to your answer: \n");
 					scanf(" %c", &choice);
+
 				} while (choice != 'a' && choice != 'b' && choice != 'c' && choice != 'd');
+
 
 				if (choice != 'a')
 				{
@@ -104,16 +163,25 @@ void history_questions(void)
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 				}
+
+				system("pause");
+				system("cls");
 				break;
 
 			case 4:
+
 				printf("\nWhat pandemic killed 1/3 of Europe's population in the 14th century?\n");
 				printf("a. Spanish flu \nb. Smallpox \nc. Bubonic plague \nd. COVID-19 \n");
+
+
+
 				do
 				{
 					printf("Please input the letter corresponding to your answer: \n");
 					scanf(" %c", &choice);
+
 				} while (choice != 'a' && choice != 'b' && choice != 'c' && choice != 'd');
+
 
 				if (choice != 'c')
 				{
@@ -123,16 +191,26 @@ void history_questions(void)
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 				}
+
+				system("pause");
+				system("cls");
 				break;
 
 			case 5:
+
 				printf("\nWhat does the Reign of Terror refer to?\n");
 				printf("a. American Revolution \nb. French Revolution \nc. Irish potato famine \nd. A 24hr hackathon \n");
+
+
+
 				do
 				{
 					printf("Please input the letter corresponding to your answer: \n");
 					scanf(" %c", &choice);
+
 				} while (choice != 'a' && choice != 'b' && choice != 'c' && choice != 'd');
+
+
 
 				if (choice != 'b')
 				{
@@ -142,10 +220,18 @@ void history_questions(void)
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 				}
+
+				system("pause");
+				system("cls");
+
 				break;
 			}
-		}
+			/*	WaitForSingleObject(timer_thread, INFINITE);
+				CloseHandle(timer_thread);*/
+		/*}*/
+		/*}*/
 	}
+	
 }
 
 void science_questions(void)
@@ -193,6 +279,9 @@ void science_questions(void)
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 				}
+
+				system("pause");
+				system("cls");
 				break;
 
 			case 1:
@@ -212,6 +301,8 @@ void science_questions(void)
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 				}
+				system("pause");
+				system("cls");
 				break;
 
 			case 2:
@@ -231,6 +322,8 @@ void science_questions(void)
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 				}
+				system("pause");
+				system("cls");
 				break;
 
 			case 3:
@@ -250,6 +343,8 @@ void science_questions(void)
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 				}
+				system("pause");
+				system("cls");
 				break;
 
 			case 4:
@@ -269,6 +364,8 @@ void science_questions(void)
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 				}
+				system("pause");
+				system("cls");
 				break;
 
 			case 5:
@@ -288,6 +385,8 @@ void science_questions(void)
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 				}
+				system("pause");
+				system("cls");
 				break;
 			}
 		}
@@ -339,6 +438,8 @@ void art_questions(void)
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 				}
+				system("pause");
+				system("cls");
 				break;
 
 			case 1:
@@ -358,6 +459,8 @@ void art_questions(void)
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 				}
+				system("pause");
+				system("cls");
 				break;
 
 			case 2:
@@ -377,6 +480,8 @@ void art_questions(void)
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 				}
+				system("pause");
+				system("cls");
 				break;
 
 			case 3:
@@ -396,6 +501,8 @@ void art_questions(void)
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 				}
+				system("pause");
+				system("cls");
 				break;
 
 			case 4:
@@ -415,6 +522,8 @@ void art_questions(void)
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 				}
+				system("pause");
+				system("cls");
 				break;
 
 			case 5:
@@ -434,6 +543,8 @@ void art_questions(void)
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 				}
+				system("pause");
+				system("cls");
 				break;
 			}
 		}
