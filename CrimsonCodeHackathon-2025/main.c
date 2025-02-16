@@ -1,13 +1,25 @@
-#include "Header.h"
+#include "Header.h" 
 
-/*
-* comment block
-*/
 
-int main()
-{
-	// commit test
-	void pix_security(); 
-	 
+
+
+int main() {
+
+	pic_security();
+	pic_rocket();
+	science_logo();
+	art_logo();
+	paintbrush();
+	myth_logo();
+	bolt();
+	geography_logo();
+	world();
+	history();
+   history_logo();
+	 trophy();
+	game_over();
+
+
+
 	return 0;
 }
