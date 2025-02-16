@@ -1,6 +1,6 @@
 #include "hacathon.h"
 
-void print_menu(void)
+int print_menu(void)
 {
 	int choice = 0;
 do{
@@ -27,6 +27,8 @@ do{
 		printf("Now you are trying to find a way to navigate to the exit of the museum,\n");
 		printf("but remember to not get caught by the Security Guard of the Museum\n");
 		printf("Now let's enter the Mythological section of the Museum.\n\n");
+		system("pause");
+		system("cls");
 		break;
 	case 2:printf(GREEN"\nEscape the Museum "RESET_COLOR);
 		printf("is a quiz - based game with a fun story line to follow along with.\n");
@@ -41,6 +43,7 @@ do{
 		break;
 	case 3: printf("\nGoodbye!\n");
 		system("\npause");
+		return 3;
 		break;
 	default: printf(RED"\nERROR\n"RESET_COLOR);
 		system("pause");
@@ -49,5 +52,5 @@ do{
 	}
 } while (choice < 1 || choice > 3 || choice == 2);
 
-
+return 0;
 }

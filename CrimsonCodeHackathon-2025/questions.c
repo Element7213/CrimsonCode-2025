@@ -2,8 +2,9 @@
 
 
 
-void history_questions(int freq[], int success)
+int history_questions(int freq[])
 {
+	int success = 0;
 	
 	int question[7];
 	int random = 0;
@@ -17,10 +18,10 @@ void history_questions(int freq[], int success)
 	}
 
 	
-	while (freq[index] == 1)
+	do
 	{
 		index = rand() % 6;
-	}
+	} while (freq[index] == 1);
 
 		
 			random = question[index];
@@ -58,10 +59,10 @@ void history_questions(int freq[], int success)
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 					success = 1;
 				}
-
+				
 				system("pause");
 				system("cls");
-
+				return success;
 				break;
 
 			case 1:
@@ -89,10 +90,10 @@ void history_questions(int freq[], int success)
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 					success = 1;
 				}
-
+				
 				system("pause");
 				system("cls");
-
+				return success;
 				break;
 
 			case 2:
@@ -120,9 +121,10 @@ void history_questions(int freq[], int success)
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 					success = 1;
 				}
-
+				
 				system("pause");
 				system("cls");
+				return success;
 				break;
 
 			case 3:
@@ -150,9 +152,10 @@ void history_questions(int freq[], int success)
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 					success = 1;
 				}
-
+				
 				system("pause");
 				system("cls");
+				return success;
 				break;
 
 			case 4:
@@ -180,9 +183,10 @@ void history_questions(int freq[], int success)
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 					success = 1;
 				}
-
+				
 				system("pause");
 				system("cls");
+				return success;
 				break;
 
 			case 5:
@@ -211,19 +215,19 @@ void history_questions(int freq[], int success)
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 					success = 1;
 				}
-
+				
 				system("pause");
 				system("cls");
-
+				return success;
 				break;
 			}
 			
-	
+			return success;
 }
 
-void science_questions(int freq[], int success)
+int science_questions(int freq[])
 {
-	
+	int success = 0;
 	
 	int question[7];
 	int random = 0;
@@ -238,10 +242,10 @@ void science_questions(int freq[], int success)
 
 
 	
-	while (freq[index] == 1)
+	do
 	{
 		index = rand() % 6;
-	}
+	} while (freq[index] == 1);
 
 		
 			random = question[index];
@@ -271,9 +275,10 @@ void science_questions(int freq[], int success)
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 					success = 1;
 				}
-
+				
 				system("pause");
 				system("cls");
+				return success;
 				break;
 
 			case 1:
@@ -295,8 +300,10 @@ void science_questions(int freq[], int success)
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 					success = 1;
 				}
+				
 				system("pause");
 				system("cls");
+				return success;
 				break;
 
 			case 2:
@@ -318,8 +325,10 @@ void science_questions(int freq[], int success)
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 					success = 1;
 				}
+				
 				system("pause");
 				system("cls");
+				return success;
 				break;
 
 			case 3:
@@ -341,8 +350,10 @@ void science_questions(int freq[], int success)
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 					success = 1;
 				}
+				
 				system("pause");
 				system("cls");
+				return success;
 				break;
 
 			case 4:
@@ -364,8 +375,10 @@ void science_questions(int freq[], int success)
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 					success = 1;
 				}
+				
 				system("pause");
 				system("cls");
+				return success;
 				break;
 
 			case 5:
@@ -387,16 +400,18 @@ void science_questions(int freq[], int success)
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 					success = 1;
 				}
+				
 				system("pause");
 				system("cls");
+				return success;
 				break;
 			}
-		
+			return success; 
 }
 
-void art_questions(int freq[], int success)
+int art_questions(int freq[])
 {
-	
+	int success = 0;
 
 	int question[7];
 	int random = 0;
@@ -410,10 +425,10 @@ void art_questions(int freq[], int success)
 	}
 
 
-	while (freq[index] == 1)
+	do
 	{
 		index = rand() % 6;
-	} 
+	} while (freq[index] == 1);
 		
 
 		
@@ -444,8 +459,10 @@ void art_questions(int freq[], int success)
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 					success = 1;
 				}
+				
 				system("pause");
 				system("cls");
+				return success;
 				break;
 
 			case 1:
@@ -467,8 +484,10 @@ void art_questions(int freq[], int success)
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 					success = 1;
 				}
+				
 				system("pause");
 				system("cls");
+				return success;
 				break;
 
 			case 2:
@@ -490,8 +509,10 @@ void art_questions(int freq[], int success)
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 					success = 1;
 				}
+	
 				system("pause");
 				system("cls");
+				return success;
 				break;
 
 			case 3:
@@ -513,8 +534,10 @@ void art_questions(int freq[], int success)
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 					success = 1;
 				}
+				
 				system("pause");
 				system("cls");
+				return success;
 				break;
 
 			case 4:
@@ -536,8 +559,10 @@ void art_questions(int freq[], int success)
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 					success = 1;
 				}
+				
 				system("pause");
 				system("cls");
+				return success;
 				break;
 
 			case 5:
@@ -559,9 +584,11 @@ void art_questions(int freq[], int success)
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 					success = 1;
 				}
+				
 				system("pause");
 				system("cls");
+				return success;
 				break;
 			}
-		
+			return success;
 }

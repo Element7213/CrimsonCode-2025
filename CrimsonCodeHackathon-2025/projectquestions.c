@@ -1,23 +1,24 @@
 #include "projectquestions.h"
 
 
-void geo_questions(int freq[], int success)
+int geo_questions(int freq[])
 {
+	int success = 0;
 
-	int question[7];
+	int question[6];
 	int random = 0;
 	int index = 0;
-	int count = 7;
+	int count = 6;
 
 	for (int i = 0; i < count; i++)
 	{
 		question[i] = i;
 	}
 
-	while (freq[index] == 1)
+	do
 	{
 		index = rand() % 6;
-	}
+	} while (freq[index] == 1);
 
 
 	
@@ -48,8 +49,11 @@ void geo_questions(int freq[], int success)
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 					success = 1;
 				}
+				
+				/*printf("Test Success: %d", success);*/
 				system("pause");
 				system("cls");
+				return success;
 				break;
 			case 1:
 				printf("\nWhich is NOT one of the 7 continents?\n");
@@ -71,8 +75,10 @@ void geo_questions(int freq[], int success)
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 					success = 1;
 				}
+				
 				system("pause");
 				system("cls");
+				return success;
 				break;
 			case 2:
 				printf("\nWhat Country has the largest population in the world?\n");
@@ -93,8 +99,10 @@ void geo_questions(int freq[], int success)
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 					success = 1;
 				}
+				
 				system("pause");
 				system("cls");
+				return success;
 				break;
 			case 3:
 				printf("\nWhat ocean lies on the West Coast?\n");
@@ -115,8 +123,10 @@ void geo_questions(int freq[], int success)
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 					success = 1;
 				}
+				
 				system("pause");
 				system("cls");
+				return success;
 				break;
 			case 4:
 				printf("\nA line from east-west on an atlas map is a line of what?\n");
@@ -137,8 +147,10 @@ void geo_questions(int freq[], int success)
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 					success = 1;
 				}
+				
 				system("pause");
 				system("cls");
+				return success;
 				break;
 			case 5:
 				printf("\nWhich is the highest mountain in the world?\n");
@@ -159,34 +171,37 @@ void geo_questions(int freq[], int success)
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 					success = 1;
 				}
+				
 				system("pause");
 				system("cls");
+				return success;
 				break;
 
 			
 			}
 
-		
+			return success;
 }
 
-void myth_questions(int freq[], int success)
+int myth_questions(int freq[])
 {
+	int success = 0;
 	
-	
-	int question[7];
+	int question[6];
 	int random = 0;
 	int index = 0;
-	int count = 7;
+	int count = 6;
 
 	for (int i = 0; i < count; i++)
 	{
 		question[i] = i;
 	}
 
-	while (freq[index] == 1)
+	do
 	{
 		index = rand() % 6;
-	}
+	} while (freq[index] == 1);
+
 			random = question[index];
 			freq[index] = 1;
 			count--;
@@ -214,8 +229,10 @@ void myth_questions(int freq[], int success)
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 					success = 1;
 				}
+				
 				system("pause");
 				system("cls");
+				return success;
 				break;
 			case 1:
 				printf("\nWhich Roman God is the God of beauty?\n");
@@ -237,10 +254,10 @@ void myth_questions(int freq[], int success)
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 					success = 1;
 				}
-
+				
 				system("pause");
 				system("cls");
-
+				return success;
 				break;
 			case 2:
 				printf("\nWhich Norse God is the God of mischief?\n");
@@ -263,6 +280,7 @@ void myth_questions(int freq[], int success)
 				}
 				system("pause");
 				system("cls");
+				return success;
 				break;
 			case 3:
 				printf("\nWho is the Greek God of war?\n");
@@ -283,8 +301,10 @@ void myth_questions(int freq[], int success)
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 					success = 1;
 				}
+				
 				system("pause");
 				system("cls");
+				return success;
 				break;
 			case 4:
 				printf("\nWhat Mythological beast grows 2 heads back if you chop 1 head off?\n");
@@ -305,8 +325,10 @@ void myth_questions(int freq[], int success)
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 					success = 1;
 				}
+				
 				system("pause");
 				system("cls");
+				return success;
 				break;
 			case 5:
 				printf("\nWhat Mythological beast guards the underworld in Greek Mythology?\n");
@@ -327,13 +349,15 @@ void myth_questions(int freq[], int success)
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 					success = 1;
 				}
+				
 				system("pause");
 				system("cls");
+				return success;
 				break;
 				
 			}
 
-		
+			return success;
 }
 
 

@@ -17,6 +17,6 @@ void maze(char mapArr[][COLS]);
 
 
 // player moves through the map per question answered.
-void mapMovement();
+void mapMovement(char mapArr[][COLS], int success, int* rowCur, int* colCur);
 
 #endif // end guard code

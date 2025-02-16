@@ -201,7 +201,82 @@ void maze(char mapArr[][COLS]) {
 
 }
 
-void mapMovement()
+void mapMovement(char mapArr[][COLS], int success, int* rowCur, int* colCur)
 {
 	// function temp, update the spaces in map for player movement
+
+	//int rowCur = 0, colCur = 0; // current index
+
+	// if player answers question correct
+	if (success)
+	{
+		if (*rowCur == 4 && *colCur == COLS - 1) // winner
+		{
+			trophy(); 
+			//return;
+		}
+
+		// move to next index
+		if ((*rowCur == 0 || *rowCur == 2 || *rowCur == 4) && *colCur < COLS-1) // if on first row. move to the right
+		{
+			*colCur += 1;
+			mapArr[*rowCur][*colCur] = 254; // new position is player
+			mapArr[*rowCur][*colCur - 1] = ' '; // previous position is blank
+		}
+		else if ((*rowCur == 1 || *rowCur == 3) && *colCur < COLS && *colCur > 0) // move to the left
+		{
+			*colCur -= 1;
+			mapArr[*rowCur][*colCur] = 254; // new position is player
+			mapArr[*rowCur][*colCur + 1] = ' '; // previous position is blank
+		}
+		else if ((*rowCur == 0 || *rowCur == 2 || *rowCur == 4) && *colCur == COLS - 1) // end of row 
+		{
+			*rowCur += 1;
+			mapArr[*rowCur][*colCur] = 254; // new position is player
+			mapArr[*rowCur - 1][*colCur] = ' '; // previous position is blank
+		}
+		else if ((*rowCur == 1 || *rowCur == 3) && *colCur < COLS && *colCur == 0)
+		{
+			*rowCur += 1;
+			mapArr[*rowCur][*colCur] = 254; // new position is player
+			mapArr[*rowCur - 1][*colCur] = ' '; // previous position is blank
+		}
+	}
+
+	// buffer text
+	if (*rowCur == 1 && *colCur == 1)
+	{
+		printf("Way to go!\n");
+		*colCur -= 1;
+		mapArr[*rowCur][*colCur] = 254; // new position is player
+		mapArr[*rowCur][*colCur + 1] = ' '; // previous position is blank
+	}
+	else if (*rowCur == 2 && *colCur == 1)
+	{
+		printf("You're halfway there!\n");
+		*colCur += 1;
+		mapArr[*rowCur][*colCur] = 254; // new position is player
+		mapArr[*rowCur][*colCur - 1] = ' '; // previous position is blank
+	}
+	else if (*rowCur == 3 && *colCur == 1)
+	{
+		printf("Amazing!\n");
+		*colCur -= 1;
+		mapArr[*rowCur][*colCur] = 254; // new position is player
+		mapArr[*rowCur][*colCur + 1] = ' '; // previous position is blank
+	}
+	else if (*rowCur == 4 && *colCur == 0)
+	{
+		printf("Almost out!\n");
+		*colCur += 1;
+		mapArr[*rowCur][*colCur] = 254; // new position is player
+		mapArr[*rowCur][*colCur - 1] = ' '; // previous position is blank
+	}
+	else if (*rowCur == 4 && *colCur == 2)
+	{
+		printf("So close!\n");
+		*colCur += 1;
+		mapArr[*rowCur][*colCur] = 254; // new position is player
+		mapArr[*rowCur][*colCur - 1] = ' '; // previous position is blank
+	}
 }

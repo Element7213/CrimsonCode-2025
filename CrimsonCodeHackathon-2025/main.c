@@ -20,43 +20,88 @@ int main()
 	mapArr[0][0] = 254;
 	
 	//mapPrint(mapArr);
-	maze(mapArr); 
+	
 
 
 
-	int success = 0;
-	int freq[7];
-	int freq2[7];
-	int freq3[7];
-	int freq4[7];
-	int freq5[7];
+	int success = 0, rowCur = 0, colCur = 0;
+	int freq[6];
+	int freq2[6];
+	int freq3[6];
+	int freq4[6];
+	int freq5[6];
 	int count = 7;
 
-	for (int i = 0; i < count; i++)
-	{
-		freq[i] = 0;
-		freq2[i] = 0;
-		freq3[i] = 0;
-		freq4[i] = 0;
-		freq5[i] = 0;
-	}
+	int end = 0;
+	do {
+		end = print_menu();
+		if (end == 3)
+			return 1;
+	
 
-	myth_questions(freq4, success);
-	myth_questions(freq4, success);
-	myth_questions(freq4, success);
-	geo_questions(freq5, success);
-	geo_questions(freq5, success);
-	geo_questions(freq5, success);
-	history_questions(freq, success);
-	history_questions(freq, success);
-	history_questions(freq, success);
-	science_questions(freq2, success);
-	science_questions(freq2, success);
-	science_questions(freq2, success);
-	art_questions(freq3, success);
-	art_questions(freq3, success);
-	art_questions(freq3, success);
+		do {
 
+		
+			maze(mapArr);
+
+			for (int i = 0; i < count; i++)
+			{
+				freq[i] = 0;
+				freq2[i] = 0;
+				freq3[i] = 0;
+				freq4[i] = 0;
+				freq5[i] = 0;
+			}
+
+			success = myth_questions(freq4);	
+			mapMovement(mapArr, success, &rowCur, &colCur);
+			maze(mapArr);
+			success = myth_questions(freq4);
+			mapMovement(mapArr, success, &rowCur, &colCur);
+			maze(mapArr);
+			success = myth_questions(freq4);
+			mapMovement(mapArr, success, &rowCur, &colCur);
+			maze(mapArr);
+			success = geo_questions(freq5);
+			mapMovement(mapArr, success, &rowCur, &colCur);
+			maze(mapArr);
+			success = geo_questions(freq5);
+			mapMovement(mapArr, success, &rowCur, &colCur); 
+			maze(mapArr);
+			success = geo_questions(freq5);
+			mapMovement(mapArr, success, &rowCur, &colCur); 
+			maze(mapArr); 
+			success = history_questions(freq);
+			mapMovement(mapArr, success, &rowCur, &colCur); 
+			maze(mapArr);
+			success = history_questions(freq);
+			mapMovement(mapArr, success, &rowCur, &colCur);
+			maze(mapArr);
+			success = history_questions(freq);
+			mapMovement(mapArr, success, &rowCur, &colCur);
+			maze(mapArr);
+			success = science_questions(freq2);
+			mapMovement(mapArr, success, &rowCur, &colCur);
+			maze(mapArr);
+			success = science_questions(freq2);
+			mapMovement(mapArr, success, &rowCur, &colCur);
+			maze(mapArr);
+			success = science_questions(freq2);
+			mapMovement(mapArr, success, &rowCur, &colCur);
+			maze(mapArr);
+			success = art_questions(freq3);
+			mapMovement(mapArr, success, &rowCur, &colCur);
+			maze(mapArr);
+			success = art_questions(freq3);
+			mapMovement(mapArr, success, &rowCur, &colCur);
+			maze(mapArr);
+			success = art_questions(freq3);
+			mapMovement(mapArr, success, &rowCur, &colCur);
+			//maze(mapArr);
+
+		} while (1);//!success || (rowCur == 4 && colCur == 3));
+
+	} while (end != 3);
 
 	/*pic_security();
 	pic_rocket();
