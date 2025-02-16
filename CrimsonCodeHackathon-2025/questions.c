@@ -28,7 +28,7 @@ int history_questions(int freq[])
 			freq[index] = 1;
 			count--;
 
-
+			//history(); 
 			char choice = NULL;
 
 
@@ -251,7 +251,7 @@ int science_questions(int freq[])
 			random = question[index];
 			freq[index] = 1;
 			count--;
-
+		//	pic_rocket();       
 
 			char choice = NULL;
 			switch (random)
@@ -435,7 +435,7 @@ int art_questions(int freq[])
 			random = question[index];
 			freq[index] = 1;
 			count--;
-
+		//	paintbrush(); 
 
 			char choice = NULL;
 			switch (random)

@@ -289,4 +289,5 @@ void mapMovement(char mapArr[][COLS], int success, int* rowCur, int* colCur)
 		mapArr[*rowCur][*colCur] = 254; // new position is player
 		mapArr[*rowCur][*colCur - 1] = ' '; // previous position is blank
 	}
+
 }

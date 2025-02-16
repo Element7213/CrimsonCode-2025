@@ -1,4 +1,5 @@
 #include "projectquestions.h"
+#include "Header.h"
 
 
 int geo_questions(int freq[])
@@ -25,7 +26,7 @@ int geo_questions(int freq[])
 			random = question[index];
 			freq[index] = 1;
 			count--;
-
+			world(); 
 			char choice = NULL;
 	
 			switch (random)
@@ -205,12 +206,13 @@ int myth_questions(int freq[])
 			random = question[index];
 			freq[index] = 1;
 			count--;
-
+			bolt(); 
 			char choice = NULL;
 
 			switch (random)
 			{
 			case 0:
+				 
 				printf("\nWho is the king of Olympus?\n");
 				printf("a. Zeus \nb. Hades \nc. Hera \nd. Poseidon \n");
 				do
@@ -235,6 +237,7 @@ int myth_questions(int freq[])
 				return success;
 				break;
 			case 1:
+				
 				printf("\nWhich Roman God is the God of beauty?\n");
 
 				printf("a. Jupiter \nb. Mars \nc. Venus \nd. Mercury \n");
@@ -260,6 +263,7 @@ int myth_questions(int freq[])
 				return success;
 				break;
 			case 2:
+			
 				printf("\nWhich Norse God is the God of mischief?\n");
 				printf("a. Thor \nb. Loki \nc. Hela \nd. Odin \n");
 				do
@@ -283,6 +287,7 @@ int myth_questions(int freq[])
 				return success;
 				break;
 			case 3:
+			
 				printf("\nWho is the Greek God of war?\n");
 				printf("a. Ares \nb. Hephaestus \nc. Hermes \nd. Athena \n");
 				do
@@ -307,6 +312,7 @@ int myth_questions(int freq[])
 				return success;
 				break;
 			case 4:
+				
 				printf("\nWhat Mythological beast grows 2 heads back if you chop 1 head off?\n");
 				printf("a. Griffon \nb. Pegasus \nc. Chimera \nd. Hydra \n");
 				do

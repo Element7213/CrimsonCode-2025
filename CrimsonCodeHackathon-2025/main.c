@@ -15,16 +15,16 @@ int main()
 
 	char mapArr[ROWS+1][COLS] = { {'\0'} }; // initializes as empty 
 										// size index for 3 questions for 5 rooms, with buffer spaces
-	mapInit(mapArr);
-	//mapArr[0][0] = "*****************************";
-	mapArr[0][0] = 254;
+	//mapInit(mapArr);
+	////mapArr[0][0] = "*****************************";
+	//mapArr[0][0] = 254;
 	
 	//mapPrint(mapArr);
 	
 
 
 
-	int success = 0, rowCur = 0, colCur = 0;
+	int success = 0, rowCur = 0, colCur = 0, guard = 0;
 	int freq[6];
 	int freq2[6];
 	int freq3[6];
@@ -33,14 +33,15 @@ int main()
 	int count = 6;
 
 	int end = 0;
-	do {
 		end = print_menu();
 		if (end == 3)
 			return 1;
 	
 
-		//do {
-
+		do {
+			mapInit(mapArr);
+			mapArr[0][0] = 254;
+			success = 0, rowCur = 0, colCur = 0, guard = 0; 
 		
 			maze(mapArr);
 
@@ -54,80 +55,370 @@ int main()
 			}
 
 			do {
+				
+				
 				success = myth_questions(freq4);
+				if (!success)
+				{
+					guard++;
+				}
+				if (guard >= 3)
+				{
+					pic_security();
+					system("pause");
+					system("cls");
+					printf(RESET_COLOR"The guard has caught you!\n"RESET);
+					system("pause");
+					
+					break;
+				}
 				mapMovement(mapArr, success, &rowCur, &colCur);
 				maze(mapArr);
-			} while (!success);
+			} while (!success);// || guard >= 3);
+			if (guard >= 3)
+			{
+				game_over();
+				// game over
+				return 1;
+			}
+			do {
+				
+				
+				success = myth_questions(freq4);
+				if (!success)
+				{
+					guard++;
+				}
+				if (guard >= 3)
+				{
+					printf(RED"The guard has caught you!\n"RESET);
+					break;
+				}
+				mapMovement(mapArr, success, &rowCur, &colCur);
+				maze(mapArr);
+			} while (!success);//&& guard != 3);
+			if (guard >= 3)
+			{
+				// game over
+				return 1;
+			}
 			do {
 				success = myth_questions(freq4);
+				if (!success)
+				{
+					guard++;
+				}
+				if (guard >= 3)
+				{
+					pic_security();
+					system("pause");
+					system("cls");
+					printf(RED"The guard has caught you!\n"RESET);
+					break;
+				}
+				
 				mapMovement(mapArr, success, &rowCur, &colCur);
 				maze(mapArr);
-			} while (!success);
+			} while (!success);// || guard != 3);
+			if (guard >= 3)
+			{
+				// game over
+				game_over();
+
+				return 1;
+			}
 			do {
-				success = myth_questions(freq4);
+			
+				
+				success = geo_questions(freq5);
+				if (!success)
+				{
+					guard++;
+				}
+				if (guard >= 3)
+				{
+					pic_security();
+					system("pause");
+					system("cls");
+					printf(RED"The guard has caught you!\n"RESET);
+					break;
+				}
 				mapMovement(mapArr, success, &rowCur, &colCur);
 				maze(mapArr);
-			} while (!success);
+			} while (!success);// || guard != 3);
+			if (guard >= 3)
+			{
+				// game over
+				game_over();
+
+				return 1;
+			}
 			do {
 				success = geo_questions(freq5);
+				if (!success)
+				{
+					guard++;
+				}
+				if (guard >= 3)
+				{
+					pic_security();
+					system("pause");
+					system("cls");
+					printf(RED"The guard has caught you!\n"RESET);
+					break;
+				}
 				mapMovement(mapArr, success, &rowCur, &colCur);
 				maze(mapArr);
-			} while (!success);
+			} while (!success);// || guard != 3);
+			if (guard >= 3)
+			{
+				// game over
+				game_over();
+
+				return 1;
+			}
 			do {
 				success = geo_questions(freq5);
+				if (!success)
+				{
+					guard++;
+				}
+				if (guard >= 3)
+				{
+					pic_security();
+					system("pause");
+					system("cls");
+					printf(RED"The guard has caught you!\n"RESET);
+					break;
+				}
 				mapMovement(mapArr, success, &rowCur, &colCur);
 				maze(mapArr);
-			} while (!success);
+			} while (!success);// || guard != 3);
+			if (guard >= 3)
+			{
+				// game over
+				game_over();
+
+				return 1;
+			}
 			do {
-				success = geo_questions(freq5);
+				
+				success = history_questions(freq);
+				if (!success)
+				{
+					guard++;
+				}
+				if (guard >= 3)
+				{
+					pic_security();
+					system("pause");
+					system("cls");
+					printf(RED"The guard has caught you!\n"RESET);
+					break;
+				}
 				mapMovement(mapArr, success, &rowCur, &colCur);
 				maze(mapArr);
-			} while (!success);
+			} while (!success);// || guard != 3);
+			if (guard >= 3)
+			{
+				// game over
+				game_over();
+
+				return 1;
+			}
 			do {
 				success = history_questions(freq);
+				if (!success)
+				{
+					guard++;
+				}
+				if (guard >= 3)
+				{
+					pic_security();
+					system("pause");
+					system("cls");
+					printf(RED"The guard has caught you!\n"RESET);
+					break;
+				}
 				mapMovement(mapArr, success, &rowCur, &colCur);
 				maze(mapArr);
-			} while (!success);
+			} while (!success);// || guard != 3);
+			if (guard >= 3)
+			{
+				// game over
+				game_over();
+
+				return 1;
+			}
 			do {
 				success = history_questions(freq);
+				if (!success)
+				{
+					guard++;
+				}
+				if (guard >= 3)
+				{
+					pic_security();
+					system("pause");
+					system("cls");
+					printf(RED"The guard has caught you!\n"RESET);
+					break;
+				}
 				mapMovement(mapArr, success, &rowCur, &colCur);
 				maze(mapArr);
-			} while (!success);
+			} while (!success);// || guard != 3);
+			if (guard >= 3)
+			{
+				// game over
+				game_over();
+
+				return 1;
+			}
 			do {
-				success = history_questions(freq);
+			
+				success = science_questions(freq2);
+				if (!success)
+				{
+					guard++;
+				}
+				if (guard >= 3)
+				{
+					pic_security();
+					system("pause");
+					system("cls");
+					printf(RED"The guard has caught you!\n"RESET);
+					break;
+				}
 				mapMovement(mapArr, success, &rowCur, &colCur);
 				maze(mapArr);
-			} while (!success);
+			} while (!success);// || guard != 3);
+			if (guard >= 3)
+			{
+				// game over
+				game_over();
+
+				return 1;
+			}
 			do {
 				success = science_questions(freq2);
+				if (!success)
+				{
+					guard++;
+				}
+				if (guard >= 3)
+				{
+					pic_security();
+					system("pause");
+					system("cls");
+					printf(RED"The guard has caught you!\n"RESET);
+					break;
+				}
 				mapMovement(mapArr, success, &rowCur, &colCur);
 				maze(mapArr);
-			} while (!success);
+			} while (!success);// || guard != 3);
+			if (guard >= 3)
+			{
+				// game over
+				game_over();
+
+				return 1;
+			}
 			do {
 				success = science_questions(freq2);
+				if (!success)
+				{
+					guard++;
+				}
+				if (guard >= 3)
+				{
+					pic_security();
+					system("pause");
+					system("cls");
+					printf(RED"The guard has caught you!\n"RESET);
+					break;
+				}
 				mapMovement(mapArr, success, &rowCur, &colCur);
 				maze(mapArr);
-			} while (!success);
+			} while (!success);// || guard != 3);
+			if (guard >= 3)
+			{
+				// game over
+				game_over();
+
+				return 1;
+			}
 			do {
-				success = science_questions(freq2);
+			
+				success = art_questions(freq3);
+				if (!success)
+				{
+					guard++;
+				}
+				if (guard >= 3)
+				{
+					pic_security();
+					system("pause");
+					system("cls");
+					printf(RED"The guard has caught you!\n"RESET);
+					break;
+				}
 				mapMovement(mapArr, success, &rowCur, &colCur);
 				maze(mapArr);
-			} while (!success);
+			} while (!success);// || guard != 3);
+			if (guard >= 3)
+			{
+				// game over
+				game_over();
+
+				return 1;
+			}
 			do {
 				success = art_questions(freq3);
+				if (!success)
+				{
+					guard++;
+				}
+				if (guard >= 3)
+				{
+					pic_security();
+					system("pause");
+					system("cls");
+					printf(RED"The guard has caught you!\n"RESET);
+					break;
+				}
 				mapMovement(mapArr, success, &rowCur, &colCur);
 				maze(mapArr);
-			} while (!success);
-			do {
-				success = art_questions(freq3);
-				mapMovement(mapArr, success, &rowCur, &colCur);
-				maze(mapArr);
-			} while (!success);
+			} while (!success);// || guard != 3);
+			if (guard >= 3)
+			{
+				// game over
+				game_over();
+
+				return 1;
+			}
 		do{
 			success = art_questions(freq3);
+			if (!success)
+			{
+				guard++;
+			}
+			if (guard >= 3)
+			{
+				pic_security();
+				system("pause");
+				system("cls");
+				printf(RED"The guard has caught you!\n"RESET);
+				break;
+			}
 			mapMovement(mapArr, success, &rowCur, &colCur);
 			maze(mapArr);
-		} while (!success);// || (rowCur == 4 && colCur == 3));
+		} while (!success);// || guard != 3);
+		if (guard >= 3)
+		{
+			game_over();
+			// game over
+			return 1;
+		}
 
 		end = print_menu(); 
 	} while (end != 3);
