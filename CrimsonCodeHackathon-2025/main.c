@@ -7,7 +7,7 @@
 
 int main()
 {	
-<<<<<<< Updated upstream
+//<<<<<<< Updated upstream
 	for (int i = 0; i < 3; ++i)
 	{
 		history_questions();
@@ -20,7 +20,7 @@ int main()
 
 //>>>>>>> Stashed changes
 //	// commit test
-=======
+//=======
 	int runner = 0;
 
     do {
@@ -37,7 +37,7 @@ int main()
 	/*	history_questions(random);*/
 
 	// commit test
->>>>>>> Stashed changes
+//>>>>>>> Stashed changes
 
 	return 0;
 }
