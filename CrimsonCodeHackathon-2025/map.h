@@ -9,10 +9,10 @@
 #define COLS 4 // map column size
 
 // initialize the empty map.
-void mapInit(char mapArr[][COLS]);
+void mapInit(char* mapArr[][COLS]);
 
 // print map
-void mapPrint(char mapArr[][COLS]);
+void mapPrint(char* mapArr[][COLS]);
 
 // player moves through the map per question answered.
 void mapMovement();
