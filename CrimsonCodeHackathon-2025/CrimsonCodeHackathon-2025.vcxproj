@@ -131,10 +131,14 @@
     <ClCompile Include="images.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="map.c" />
+    <ClCompile Include="projectquestions.c" />
+    <ClCompile Include="questions.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h" />
     <ClInclude Include="map.h" />
+    <ClInclude Include="projectquestions.h" />
+    <ClInclude Include="questions.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="hacathon.h" />
