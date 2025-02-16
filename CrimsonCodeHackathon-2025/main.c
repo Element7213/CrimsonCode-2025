@@ -8,5 +8,6 @@ int main()
 {
 	mapInit();
 
+
 	return 0;
 }

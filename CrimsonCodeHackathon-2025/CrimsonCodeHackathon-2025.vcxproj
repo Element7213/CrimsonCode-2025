@@ -127,11 +127,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="hacathon.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="map.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="map.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="hacathon.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

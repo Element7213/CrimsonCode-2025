@@ -18,12 +18,20 @@
     <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="map.c">
+=======
+    <ClCompile Include="hacathon.c">
+>>>>>>> origin/Menu
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <ClInclude Include="map.h">
+=======
+    <ClInclude Include="hacathon.h">
+>>>>>>> origin/Menu
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
