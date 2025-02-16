@@ -16,7 +16,9 @@
 
 void history_questions(void);
 
+void science_questions(void);
 
+void art_questions(void);
 
 
 
