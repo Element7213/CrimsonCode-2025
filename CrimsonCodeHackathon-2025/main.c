@@ -8,6 +8,7 @@
 int main()
 <<<<<<< Updated upstream
 {
+<<<<<<< Updated upstream
 	
 =======
 {	
@@ -26,6 +27,10 @@ int main()
 
 	/*	history_questions(random);*/
 
+>>>>>>> Stashed changes
+=======
+	/*countdown_timer();*/
+	history_questions();
 >>>>>>> Stashed changes
 	// commit test
 
