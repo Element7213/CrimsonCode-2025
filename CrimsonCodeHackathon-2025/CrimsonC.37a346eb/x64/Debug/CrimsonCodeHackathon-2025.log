@@ -1,6 +1,0 @@
-﻿  projectquestions.c
-C:\Users\kirst\OneDrive\Documents\GitHub\CrimsonCode-2025\CrimsonCodeHackathon-2025\projectquestions.c(6,8): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\kirst\OneDrive\Documents\GitHub\CrimsonCode-2025\CrimsonCodeHackathon-2025\projectquestions.c(28,9): warning C4047: 'initializing': 'char' differs in levels of indirection from 'void *'
-C:\Users\kirst\OneDrive\Documents\GitHub\CrimsonCode-2025\CrimsonCodeHackathon-2025\projectquestions.c(165,8): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\kirst\OneDrive\Documents\GitHub\CrimsonCode-2025\CrimsonCodeHackathon-2025\projectquestions.c(187,9): warning C4047: 'initializing': 'char' differs in levels of indirection from 'void *'
-  CrimsonCodeHackathon-2025.vcxproj -> C:\Users\kirst\OneDrive\Documents\GitHub\CrimsonCode-2025\CrimsonCodeHackathon-2025\x64\Debug\CrimsonCodeHackathon-2025.exe
