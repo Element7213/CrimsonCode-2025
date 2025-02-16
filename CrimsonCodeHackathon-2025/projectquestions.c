@@ -226,8 +226,11 @@ void myth_questions(void)
 				{
 					printf(GREEN "\nThat's right! Keep going, you're almost at the exit!\n" RESET);
 				}
+<<<<<<< Updated upstream
 				system("pause");
 				system("cls");
+=======
+>>>>>>> Stashed changes
 				break;
 			case 3:
 				printf("\nWhich Norse God is the God of mischief?\n");
