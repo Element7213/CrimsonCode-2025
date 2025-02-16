@@ -11,7 +11,7 @@ do{
 
 	printf(PURPLE"\n---Escape the Museum---\n"RESET_COLOR);
 	printf("1.Play Game\n2.Display Rules\n3.Exit Game\n");
-	printf("Please input which choice you would like to make (1-3): \n");
+	printf("Please input which choice you would like to make (1-3): \n"); 
 	scanf("%d", &choice);
 
 	switch (choice)
