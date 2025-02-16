@@ -17,9 +17,9 @@
 #define COUNTDOWN_TIME 180
 
 
-void myth_questions(void);
+void myth_questions(int freq[], int success);
 
-void geo_questions(void);
+void geo_questions(int freq[], int success);
 
 
 
